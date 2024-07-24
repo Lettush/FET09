@@ -1,0 +1,56 @@
+- Initialize a repository
+git init
+
+- Configure the username
+git config --global user.name "username"
+git config user.name
+
+- Configure the email
+git config --global user.email "email"
+git config user.email
+
+- Check the status of the files
+git status
+
+- Add the modified files into the staging area
+git add . 
+
+- Create a commit
+git commit -m "This is the description."
+
+- View the commit history
+git log
+git log --oneline
+
+
+=== BRANCHING ===
+
+- List all of the branches
+git branch -a
+
+- Create a new branch
+git branch [branch-name]
+
+- Switch into a new branch
+git switch [branch-name]
+
+=== MERGING ===
+
+- Merge a branch to another branch
+git merge [branch-name]
+
+- Delete a branch
+git branch -d [branch-name]
+
+
+=== Creating a Remote Repository ===
+
+- Connect the Local Repository to the Remote repository
+git remote add origin [repository-url]
+
+- Rename the master branch to main
+git branch -M main
+
+- Push the code from Local Repository to Remote Initially
+git push -u origin main
+git push
